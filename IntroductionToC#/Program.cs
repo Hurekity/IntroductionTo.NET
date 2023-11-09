@@ -30,10 +30,10 @@ namespace DataTypes
             */
             // first task
             Console.Write("Write a number to modify: ");
-            double number = Convert.ToDouble(Console.ReadLine());
-            Console.Write($"Your number: {number}");
-            int f_number = Convert.ToInt32(number);
-            int remainder = Convert.ToInt32((number - f_number)*100);
+            decimal number = Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine($"Your number: {number}");
+            int f_number = (int)number; //Convert.ToInt32(number);
+            int remainder = (int)((number - f_number)*100);
             Console.WriteLine($" --> {f_number}rub {remainder}k");  // if .>5 then .x=100-secpart of digit in minus position
             Console.WriteLine("\n\n");
 
