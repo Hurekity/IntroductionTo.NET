@@ -109,6 +109,7 @@ namespace Arrays
                 }
                 Console.WriteLine();    
             }
+            
         }
     }
 }
